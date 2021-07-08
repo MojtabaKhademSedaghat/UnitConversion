@@ -3,9 +3,16 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31005.135
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Zino.Api", "UnitConversion.Zino\Zino.Api.csproj", "{99CB0B64-27DF-49A3-B0A5-2C3C59C6E824}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Zino.Api", "UnitConversion.Zino\Zino.Api.csproj", "{99CB0B64-27DF-49A3-B0A5-2C3C59C6E824}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Zino.Domain", "Zino.Domain\Zino.Domain.csproj", "{87813E5D-5D41-4963-8120-EB5651C97929}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Zino.Service", "Zino.Service\Zino.Service.csproj", "{E462517B-A20A-40EE-89B4-5DA73AF969D5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{1D7E9CBD-E5F9-44DC-AD88-A4BACEBF9935}"
+	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +28,10 @@ Global
 		{87813E5D-5D41-4963-8120-EB5651C97929}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{87813E5D-5D41-4963-8120-EB5651C97929}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{87813E5D-5D41-4963-8120-EB5651C97929}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E462517B-A20A-40EE-89B4-5DA73AF969D5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E462517B-A20A-40EE-89B4-5DA73AF969D5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E462517B-A20A-40EE-89B4-5DA73AF969D5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E462517B-A20A-40EE-89B4-5DA73AF969D5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
