@@ -4,6 +4,8 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Zino.Service.DTOs;
+using Zino.Service.Validations;
 
 namespace UnitConversion.Zino.Controllers
 {
@@ -24,8 +26,13 @@ namespace UnitConversion.Zino.Controllers
         }
 
         [HttpGet]
-        public IEnumerable<WeatherForecast> Get()
+        public async Task<IEnumerable<WeatherForecast>> Get()
         {
+            var validator = await new FormulasUnitValidator().ValidateAsync(new FormulasUnitDTO()
+            {
+                FormulaFromUnit = "(b * 9/5) + 32",
+                FormulaToUnit = "a + 273.15"
+            });
             var rng = new Random();
             return Enumerable.Range(1, 5).Select(index => new WeatherForecast
             {

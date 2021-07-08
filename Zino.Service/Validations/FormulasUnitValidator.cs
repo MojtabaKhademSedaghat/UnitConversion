@@ -18,6 +18,8 @@ namespace Zino.Service.Validations
             RuleFor(x => x.FormulaToUnit).NotEmpty().Matches(@"[a]").WithMessage("just use 'a' in fourmola");
             //check formul : use a
             RuleFor(x => x.FormulaFromUnit).NotEmpty().Matches(@"[a]").WithMessage("just use 'a' in fourmola");
+
+            RuleFor(x => x.EnglishName).NotEmpty();
         }
     }
 }
