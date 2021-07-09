@@ -14,6 +14,7 @@ namespace Zino.Api.Controllers
     [ApiController]
     public class UnitConvertController : Controller
     {
+
         private readonly ILogger<UnitConvertController> _logger;
         private readonly IServiceConvert _serviceConvert;
 
@@ -24,7 +25,7 @@ namespace Zino.Api.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> FormulasUnit([FromBody] FormulasUnitDTO request)
+        public async Task<IActionResult> UnitWithFormula([FromBody] FormulasUnitDTO request)
         {
             try
             {
