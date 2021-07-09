@@ -3,8 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31005.135
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Zino.Api", "Zino.Zino\Zino.Api.csproj", "{99CB0B64-27DF-49A3-B0A5-2C3C59C6E824}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Zino.Domain", "Zino.Domain\Zino.Domain.csproj", "{87813E5D-5D41-4963-8120-EB5651C97929}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Zino.Service", "Zino.Service\Zino.Service.csproj", "{E462517B-A20A-40EE-89B4-5DA73AF969D5}"
@@ -14,7 +12,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		README.md = README.md
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Zino.Core", "Zino.Core\Zino.Core.csproj", "{513D71A3-1DA8-4C82-9F32-72C3D4F51886}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Zino.Core", "Zino.Core\Zino.Core.csproj", "{513D71A3-1DA8-4C82-9F32-72C3D4F51886}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Zino.Api", "Zino.Api\Zino.Api.csproj", "{69F15422-3C97-4FFE-8630-DE6481E36C40}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -22,10 +22,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{99CB0B64-27DF-49A3-B0A5-2C3C59C6E824}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{99CB0B64-27DF-49A3-B0A5-2C3C59C6E824}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{99CB0B64-27DF-49A3-B0A5-2C3C59C6E824}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{99CB0B64-27DF-49A3-B0A5-2C3C59C6E824}.Release|Any CPU.Build.0 = Release|Any CPU
 		{87813E5D-5D41-4963-8120-EB5651C97929}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{87813E5D-5D41-4963-8120-EB5651C97929}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{87813E5D-5D41-4963-8120-EB5651C97929}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -38,6 +34,10 @@ Global
 		{513D71A3-1DA8-4C82-9F32-72C3D4F51886}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{513D71A3-1DA8-4C82-9F32-72C3D4F51886}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{513D71A3-1DA8-4C82-9F32-72C3D4F51886}.Release|Any CPU.Build.0 = Release|Any CPU
+		{69F15422-3C97-4FFE-8630-DE6481E36C40}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{69F15422-3C97-4FFE-8630-DE6481E36C40}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{69F15422-3C97-4FFE-8630-DE6481E36C40}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{69F15422-3C97-4FFE-8630-DE6481E36C40}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
