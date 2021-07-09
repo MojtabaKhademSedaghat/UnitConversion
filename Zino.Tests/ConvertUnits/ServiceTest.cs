@@ -34,9 +34,6 @@ namespace Zino.Tests.ConvertUnits
             Assert.IsNotNull(response);
             Assert.AreEqual(33.8, response.Value);
         }
-        /// <summary>
-        /// test method CoefficientUnit < send 5 meter and return other units
-        /// </summary>
         [TestMethod]
         public void Shold_Convert_Unit() 
         {
