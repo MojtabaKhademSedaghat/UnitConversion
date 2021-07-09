@@ -10,16 +10,20 @@ namespace Zino.Service.Validations
         public FormulasUnitValidator()
         {
             //check formul : use - + * /
-            RuleFor(x => x.FormulaFromUnit).NotEmpty().Matches(@"[+*/-]").WithMessage("Plaese checke Mathematical Operators");
-            //check formul : use - + * /
-            RuleFor(x => x.FormulaToUnit).NotEmpty().Matches(@"[+*/-]").WithMessage("Plaese checke Mathematical Operators");
+            RuleFor(x => x.Formula).NotEmpty().Matches(@"[+*/-]").WithMessage("Plaese checke Mathematical Operators");
 
             //check formul : use a
-            RuleFor(x => x.FormulaToUnit).NotEmpty().Matches(@"[a]").WithMessage("just use 'a' in fourmola");
-            //check formul : use a
-            RuleFor(x => x.FormulaFromUnit).NotEmpty().Matches(@"[a]").WithMessage("just use 'a' in fourmola");
+            RuleFor(x => x.Formula).NotEmpty().Matches(@"[a]").WithMessage("just use 'a' in fourmola");
 
-            RuleFor(x => x.EnglishName).NotEmpty();
+            //RuleFor(x => x.EnglishName).NotEmpty();
+        }
+    }
+    public class CoefficientUnitValidator : AbstractValidator<CoefficientUnitDTO>
+    {
+        public CoefficientUnitValidator()
+        {
+            RuleFor(x => x.Symbols).NotEmpty();
+            RuleFor(x => x.Value).NotEqual(0).WithMessage("value should upper 0!");
         }
     }
 }
