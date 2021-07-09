@@ -10,6 +10,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Zino.Api.Extensions;
 
 namespace UnitConversion.Zino
 {
@@ -26,6 +27,7 @@ namespace UnitConversion.Zino
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
+            services.RegisterServices(Configuration);
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -35,7 +37,7 @@ namespace UnitConversion.Zino
             {
                 app.UseDeveloperExceptionPage();
             }
-
+            app.UseZinoSwagger();
             app.UseHttpsRedirection();
 
             app.UseRouting();
@@ -46,6 +48,7 @@ namespace UnitConversion.Zino
             {
                 endpoints.MapControllers();
             });
+
         }
     }
 }

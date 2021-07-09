@@ -5,11 +5,11 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="FluentValidation.AspNetCore" Version="10.2.3" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="5.0.1" />
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Zino.Core\Zino.Core.csproj" />
+    <ProjectReference Include="..\Zino.Domain\Zino.Domain.csproj" />
   </ItemGroup>
 
 </Project>
