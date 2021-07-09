@@ -31,7 +31,7 @@ namespace Zino.Api.Controllers
             {
                 var validator = await new FormulasUnitValidator().ValidateAsync(request);
                 if (validator.IsValid)
-                    return Json(_serviceConvert.FormulasUnit(request));
+                    return Json(_serviceConvert.UnitWithFormula(request));
                 else
                     throw new Exception(string.Join(",", validator.Errors));
             }
