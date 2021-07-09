@@ -11,15 +11,15 @@ namespace Zino.Service.Services
     public class ServiceConvert : IServiceConvert
     {
         #region [Props]
-        public ILogger<ServiceConvert> _logger { get; }
+        public ILogger _logger { get; }
         public IUnitFurmola _unitFurmola { get; }
         #endregion [Props]
 
         #region [Ctor]
 
-        public ServiceConvert(ILogger<ServiceConvert> logger, IUnitFurmola unitFurmola)
+        public ServiceConvert(ILoggerFactory logger, IUnitFurmola unitFurmola)
         {
-            _logger = logger;
+            _logger = logger.CreateLogger("ServiceConvert");
             _unitFurmola = unitFurmola;
         }
 
@@ -57,7 +57,7 @@ namespace Zino.Service.Services
         /// </summary>
         /// <param name="request"></param>
         /// <returns>return value after calculate</returns>
-        public FormulasUnitResponse FormulasUnit(FormulasUnitDTO request)
+        public FormulasUnitResponse UnitWithFormula(FormulasUnitDTO request)
         {
             var result = new FormulasUnitResponse();
             try
