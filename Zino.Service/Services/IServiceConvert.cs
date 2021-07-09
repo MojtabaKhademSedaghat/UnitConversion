@@ -9,6 +9,6 @@ namespace Zino.Service.Services
     public interface IServiceConvert
     {
         Dictionary<string, Unit> CoefficientUnit(CoefficientUnitDTO request);
-        FormulasUnitResponse FormulasUnit(FormulasUnitDTO request);
+        FormulasUnitResponse UnitWithFormula(FormulasUnitDTO request);
     }
 }
