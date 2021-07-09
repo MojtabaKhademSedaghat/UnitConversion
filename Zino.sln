@@ -16,6 +16,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Zino.Core", "Zino.Core\Zino
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Zino.Api", "Zino.Api\Zino.Api.csproj", "{69F15422-3C97-4FFE-8630-DE6481E36C40}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{2EF12CED-DB1C-48FE-B3F1-46A7D936DEFF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Zino.Tests", "Zino.Tests\Zino.Tests.csproj", "{817A2A4B-49FC-461B-9ACF-6E45E018E0C9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -38,9 +42,16 @@ Global
 		{69F15422-3C97-4FFE-8630-DE6481E36C40}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{69F15422-3C97-4FFE-8630-DE6481E36C40}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{69F15422-3C97-4FFE-8630-DE6481E36C40}.Release|Any CPU.Build.0 = Release|Any CPU
+		{817A2A4B-49FC-461B-9ACF-6E45E018E0C9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{817A2A4B-49FC-461B-9ACF-6E45E018E0C9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{817A2A4B-49FC-461B-9ACF-6E45E018E0C9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{817A2A4B-49FC-461B-9ACF-6E45E018E0C9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{817A2A4B-49FC-461B-9ACF-6E45E018E0C9} = {2EF12CED-DB1C-48FE-B3F1-46A7D936DEFF}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {6DAB4BF3-5B35-4CEC-9CB2-9A4132CE95A8}
