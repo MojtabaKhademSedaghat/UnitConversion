@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31005.135
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Zino.Api", "UnitConversion.Zino\Zino.Api.csproj", "{99CB0B64-27DF-49A3-B0A5-2C3C59C6E824}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Zino.Api", "Zino.Zino\Zino.Api.csproj", "{99CB0B64-27DF-49A3-B0A5-2C3C59C6E824}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Zino.Domain", "Zino.Domain\Zino.Domain.csproj", "{87813E5D-5D41-4963-8120-EB5651C97929}"
 EndProject
